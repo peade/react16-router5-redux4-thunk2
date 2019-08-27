@@ -2,7 +2,9 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {ADD, SUBTRACT} from '../store/actions'
-
+/**
+ * mapSateToProps, mapDispatchToProps 将store里相应的值传入组件的props
+ * */
 const mapStateToProps = (state, ownProps) => {
   return state.NumOp
 }
@@ -25,7 +27,6 @@ class Index extends React.Component {
   }
 
   goParent() {
-
     this.props.history.push('/parent')
   }
 
