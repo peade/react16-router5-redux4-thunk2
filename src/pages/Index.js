@@ -18,8 +18,11 @@ class Index extends React.Component {
       <div>
         demo Index
         <Link className={'margin-right-30'} to={'/'}>Index page</Link>
-        <Link className={'margin-right-30'}  to={'/parent'}> to Parent</Link>
+        <Link className={'margin-right-30'} to={'/parent'}> to Parent</Link>
         <button onClick={() => this.goParent()}>Go Parent</button>
+        <div className={'text-center'}>
+          number:{}
+        </div>
       </div>
     )
   }
