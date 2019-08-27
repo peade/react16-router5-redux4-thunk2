@@ -1,4 +1,4 @@
-import NumberAction from './actions'
+import {NumberAction} from './actions'
 
 const initState = {
   number: 0
